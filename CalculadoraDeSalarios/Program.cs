@@ -63,7 +63,7 @@ while (keep)
     do
     {
         Console.WriteLine("-----------------------------------");
-        Console.WriteLine("Agora preciso saber a qual classe pertence o jogador - " +nome);
+        Console.WriteLine("Agora preciso saber a qual classe pertence o jogador - " + nome);
         Console.WriteLine();
         Console.WriteLine("Pressione a opção equivalente a classe do jogador!");
         Console.WriteLine();
@@ -81,15 +81,16 @@ while (keep)
             Console.WriteLine("Valor inserido invalido, vamos tentar novamente!");
             classNumber = 0;
         }
+        Console.Clear();
 
     } while (classNumber == 0);
 
-    Player newPlayer = new(nome,offense,deffense,bodyBalance,stamina,speed,acceleration,pass,shootPower,shootAcc,jump,head,technique,dribble,curve, aggresive, response);
+    Player newPlayer = new(nome, offense, deffense, bodyBalance, stamina, speed, acceleration, pass, shootPower, shootAcc, jump, head, technique, dribble, curve, aggresive, response);
 
 
     newPlayer.CalcSalary(classNumber);
 
-
+    listPlayers.Add(newPlayer);
 
 
     bool verifyCondition = false;
@@ -116,9 +117,14 @@ while (keep)
 
     } while (verifyCondition);
 
-    Console.WriteLine(newPlayer);
+    double orçamento = 0;
+    foreach (Player player in listPlayers)
+    {
+        Console.WriteLine(player);
+        orçamento += player.PlayerSalary;
+    }
+    Console.WriteLine("O orçamento da sua equipe é de :" + orçamento);
 
-  
 }
 
 

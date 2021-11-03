@@ -59,7 +59,7 @@ namespace CalculadoraDeSalarios.Classes
         }
 
         
-        public int CalcKey()
+        private int CalcKey()
         {
             int key;
 
