@@ -102,6 +102,15 @@ while (keep)
         {
             keep = false;
             verifyCondition = false;
+            double orçamento = 0;
+            foreach (Player player in listPlayers)
+            {
+                Console.WriteLine(player);
+                orçamento += player.PlayerSalary;
+            }
+            Console.WriteLine("O orçamento da sua equipe é de :" + orçamento);
+            Console.WriteLine("Pressione qualquer tecla para sair!");
+            Console.ReadKey();
         }
         else if (option == "S")
         {
@@ -117,14 +126,11 @@ while (keep)
 
     } while (verifyCondition);
 
-    double orçamento = 0;
-    foreach (Player player in listPlayers)
-    {
-        Console.WriteLine(player);
-        orçamento += player.PlayerSalary;
-    }
-    Console.WriteLine("O orçamento da sua equipe é de :" + orçamento);
+   
 
+    
+
+    
 }
 
 

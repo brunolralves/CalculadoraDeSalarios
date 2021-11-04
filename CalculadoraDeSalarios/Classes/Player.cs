@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CalculadoraDeSalarios.Classes
+﻿namespace CalculadoraDeSalarios.Classes
 {
     internal class Player
     {
@@ -27,7 +21,7 @@ namespace CalculadoraDeSalarios.Classes
         public int Response { get; set; }
         public Double PlayerSalary { get; set; }
         public String PlayerClass { get; set; }
-        
+
 
 
 
@@ -58,7 +52,7 @@ namespace CalculadoraDeSalarios.Classes
             Response = response;
         }
 
-        
+
         private int CalcKey()
         {
             int key;
@@ -138,8 +132,8 @@ namespace CalculadoraDeSalarios.Classes
             return "Salario do Jogador "
                   + Nome
                   + ": "
-                  +PlayerSalary
-                  
+                  + PlayerSalary
+
                   ;
         }
 
