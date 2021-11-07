@@ -133,6 +133,8 @@
                   + Nome
                   + ": "
                   + PlayerSalary
+                  + " Classe: "
+                  + PlayerClass
 
                   ;
         }
