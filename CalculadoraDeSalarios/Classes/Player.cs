@@ -33,6 +33,7 @@
 
         public Player(string nome, int offense, int deffense, int bodyBalance, int stamina, int speed, int acceleration, int pass, int shootPower, int shootAcc, int jump, int head, int technique, int dribble, int curve, int aggresive, int response)
         {
+            
             Nome = nome;
             Offense = offense;
             Deffense = deffense;
@@ -125,6 +126,21 @@
 
 
             PlayerSalary = salary;
+        }
+
+        public static int ValidarInput()
+        {
+            string input = Console.ReadLine();
+
+            if (input != "")
+            {
+                return Convert.ToInt16(input);
+            }
+            else
+            {
+              return 0;
+            }
+            
         }
 
         public override string ToString()

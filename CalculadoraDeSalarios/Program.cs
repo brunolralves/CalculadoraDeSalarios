@@ -2,9 +2,7 @@
 using CalculadoraDeSalarios.Classes;
 
 
-
 List<Player> listPlayers = new List<Player>();
-
 
 Boolean keep = true;
 string option = " ";
@@ -14,42 +12,45 @@ while (keep)
     Console.WriteLine("Informe o nome do jogador");
     String nome = Console.ReadLine();
 
+    
     Console.WriteLine("------------------------------------------------------------");
     Console.WriteLine("Agora vamos montar a arvore de atributos para definir o salario do jogador - " + nome);
     Console.WriteLine("Cada um dos atributos de receber um valor entre 12 e 19 pontos!");
     Console.WriteLine("Vamos la!");
+
+    
     Console.Write("Offense:");
-    int offense = int.Parse(Console.ReadLine());
+    int offense = Player.ValidarInput();
     Console.Write("Deffense:");
-    int deffense = int.Parse(Console.ReadLine());
+    int deffense = Player.ValidarInput();
     Console.Write("BodyBalance:");
-    int bodyBalance = int.Parse(Console.ReadLine());
+    int bodyBalance = Player.ValidarInput();
     Console.Write("Stamina:");
-    int stamina = int.Parse(Console.ReadLine());
+    int stamina = Player.ValidarInput();
     Console.Write("Speed:");
-    int speed = int.Parse(Console.ReadLine());
+    int speed = Player.ValidarInput();
     Console.Write("Acceleration:");
-    int acceleration = int.Parse(Console.ReadLine());
+    int acceleration = Player.ValidarInput();
     Console.Write("Pass:");
-    int pass = int.Parse(Console.ReadLine());
+    int pass = Player.ValidarInput();
     Console.Write("Shoot Power:");
-    int shootPower = int.Parse(Console.ReadLine());
+    int shootPower = Player.ValidarInput();
     Console.Write("Shoot Acc.:");
-    int shootAcc = int.Parse(Console.ReadLine());
+    int shootAcc = Player.ValidarInput();
     Console.Write("Jump:");
-    int jump = int.Parse(Console.ReadLine());
+    int jump = Player.ValidarInput();
     Console.Write("Head:");
-    int head = int.Parse(Console.ReadLine());
+    int head = Player.ValidarInput();
     Console.Write("Technique:");
-    int technique = int.Parse(Console.ReadLine());
+    int technique = Player.ValidarInput();
     Console.Write("Dribble:");
-    int dribble = int.Parse(Console.ReadLine());
+    int dribble = Player.ValidarInput();
     Console.Write("Curve:");
-    int curve = int.Parse(Console.ReadLine());
+    int curve = Player.ValidarInput();
     Console.Write("Aggresive:");
-    int aggresive = int.Parse(Console.ReadLine());
+    int aggresive = Player.ValidarInput();
     Console.Write("Response:");
-    int response = int.Parse(Console.ReadLine());
+    int response = Player.ValidarInput();
     Console.Clear();
 
     Console.WriteLine();
@@ -129,7 +130,7 @@ while (keep)
    
 
     
-
+    
     
 }
 
